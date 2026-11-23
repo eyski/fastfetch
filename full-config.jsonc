@@ -1,0 +1,50 @@
+{
+// Requires a Nerd Font set as the terminal font
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "padding": { "top": 1, "left": 2, "right": 3 }
+  },
+  "display": {
+    "separator": "",
+    "color": { "separator": "90" }
+  },
+  "modules": [
+    "break",
+    { "type": "title", "key": "{#90}╭─ " },
+
+    { "type": "os",       "key": "{#90}│ {#keys}\uf17c  OS      " },
+    { "type": "kernel",   "key": "{#90}│ {#keys}\uf013  Kernel  " },
+    { "type": "uptime",   "key": "{#90}│ {#keys}\uf017  Uptime  " },
+    { "type": "packages", "key": "{#90}│ {#keys}\uf1b2  Pkgs    " },
+
+    { "type": "custom", "format": "├─", "outputColor": "90" },
+
+    { "type": "shell",    "key": "{#90}│ {#keys}\uf120  Shell   " },
+    { "type": "terminal", "key": "{#90}│ {#keys}\uf489  Term    " },
+    { "type": "terminalfont", "key": "{#90}│ {#keys}\uf031  Font    " },
+
+    { "type": "custom", "format": "├─", "outputColor": "90" },
+
+    { "type": "display", "key": "{#90}│ {#keys}\uf108  Display " },
+    { "type": "de",      "key": "{#90}│ {#keys}\uf1fc  DE      " },
+    { "type": "wm",      "key": "{#90}│ {#keys}\uf2d0  WM      " },
+    // { "type": "locale",  "key": "{#90}│ {#keys}\uf0ac  Locale  " },
+
+    { "type": "custom", "format": "├─", "outputColor": "90" },
+
+    { "type": "cpu",     "key": "{#90}│ {#keys}\uf2db  CPU     " },
+    { "type": "gpu",     "key": "{#90}│ {#keys}\uf26c  GPU     " },
+    { "type": "memory",  "key": "{#90}│ {#keys}\uf080  RAM     " },
+    { "type": "battery", "key": "{#90}│ {#keys}\uf240  Battery " },
+    { "type": "disk",    "key": "{#90}│ {#keys}\uf0a0  Disk    " },
+
+    { "type": "custom", "format": "├─", "outputColor": "90" },
+
+    { "type": "vulkan", "key": "{#90}│ {#keys}\uf121  Vulkan  " },
+    { "type": "opengl", "key": "{#90}│ {#keys}\uf1b3  OpenGL  " },
+
+    { "type": "custom", "format": "{#90}╰─ {#31}● {#32}● {#33}● {#34}● {#35}● {#36}●" },
+    "break"
+  ]
+}
